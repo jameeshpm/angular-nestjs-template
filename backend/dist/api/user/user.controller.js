@@ -11,9 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
+var _a, _b;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserController = void 0;
 const common_1 = require("@nestjs/common");
+const express_1 = require("express");
 const auth_guard_1 = require("./auth/auth.guard");
 const user_dto_1 = require("./user.dto");
 const user_service_1 = require("./user.service");
@@ -33,8 +35,8 @@ __decorate([
     __param(0, (0, common_1.Body)()),
     __param(1, (0, common_1.Req)()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [user_dto_1.UpdateNameDto, Object]),
-    __metadata("design:returntype", Promise)
+    __metadata("design:paramtypes", [user_dto_1.UpdateNameDto, typeof (_a = typeof express_1.Request !== "undefined" && express_1.Request) === "function" ? _a : Object]),
+    __metadata("design:returntype", typeof (_b = typeof Promise !== "undefined" && Promise) === "function" ? _b : Object)
 ], UserController.prototype, "updateName", null);
 exports.UserController = UserController = __decorate([
     (0, common_1.Controller)('user')

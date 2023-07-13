@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AuthService = void 0;
 const common_1 = require("@nestjs/common");
@@ -48,7 +49,7 @@ let AuthService = exports.AuthService = class AuthService {
 };
 __decorate([
     (0, typeorm_1.InjectRepository)(user_entity_1.User),
-    __metadata("design:type", typeorm_2.Repository)
+    __metadata("design:type", typeof (_a = typeof typeorm_2.Repository !== "undefined" && typeorm_2.Repository) === "function" ? _a : Object)
 ], AuthService.prototype, "repository", void 0);
 __decorate([
     (0, common_1.Inject)(auth_helper_1.AuthHelper),

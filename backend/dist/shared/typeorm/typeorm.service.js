@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TypeOrmConfigService = void 0;
 const common_1 = require("@nestjs/common");
@@ -31,7 +32,7 @@ let TypeOrmConfigService = exports.TypeOrmConfigService = class TypeOrmConfigSer
 };
 __decorate([
     (0, common_1.Inject)(config_1.ConfigService),
-    __metadata("design:type", config_1.ConfigService)
+    __metadata("design:type", typeof (_a = typeof config_1.ConfigService !== "undefined" && config_1.ConfigService) === "function" ? _a : Object)
 ], TypeOrmConfigService.prototype, "config", void 0);
 exports.TypeOrmConfigService = TypeOrmConfigService = __decorate([
     (0, common_1.Injectable)()

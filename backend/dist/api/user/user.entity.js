@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.User = void 0;
 const class_transformer_1 = require("class-transformer");
@@ -33,7 +34,7 @@ __decorate([
 ], User.prototype, "name", void 0);
 __decorate([
     (0, typeorm_1.Column)({ type: 'timestamp', nullable: true, default: null }),
-    __metadata("design:type", Date)
+    __metadata("design:type", typeof (_a = typeof Date !== "undefined" && Date) === "function" ? _a : Object)
 ], User.prototype, "lastLoginAt", void 0);
 exports.User = User = __decorate([
     (0, typeorm_1.Entity)()
